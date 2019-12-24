@@ -1,0 +1,22 @@
+# vim:set ts=2 sts=2 sw=2 et:
+
+$include /etc/inputrc
+
+set editing-mode vi
+set show-mode-in-prompt on
+set vi-ins-mode-string \1\e[6 q\2
+set vi-cmd-mode-string \1\e[2 q\2
+
+set echo-control-characters off
+
+$if mode=vi
+  set keymap vi-command
+  "\e[B": history-search-forward
+  "\e[A": history-search-backward
+  j: history-search-forward
+  k: history-search-backward
+  
+  set keymap vi-insert
+  "\e[B": history-search-forward
+  "\e[A": history-search-backward
+$endif

@@ -1,0 +1,24 @@
+typeset -U path
+texpath=/usr/local/texlive/2019/bin/x86_64-linux
+path=(~/.opam/default/bin ~/bin ~/.local/bin ~/.cargo/bin ~/.emacs.d/bin $texpath $path[@])
+
+alias ls='ls --color=auto'
+alias ll='ls -l'
+alias vi='nvim'
+alias mutt='neomutt'
+alias ghcid='stack exec -- ghcid'
+
+export EDITOR=nvim
+export TERMINAL=termite
+export BROWSER=firefox-developer-edition
+export GPG_TTY=$(tty)
+
+export HISTFILE=~/.zsh_history
+export HISTSIZE=1000
+export SAVEHIST=1000
+
+# Python
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=' -p /usr/bin/python3 '
+export PROJECT_HOME=$HOME/projects
