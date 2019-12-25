@@ -1,43 +1,36 @@
 [options]
 font = Inconsolata 12
 
-# Rigel colorscheme
+# Copyright (c) 2016-present Arctic Ice Studio <development@arcticicestudio.com>
+# Copyright (c) 2016-present Sven Greb <code@svengreb.de>
+
+# Project:    Nord Termite
+# Repository: https://github.com/arcticicestudio/nord-termite
+# License:    MIT
+
 [colors]
+cursor = #d8dee9
+cursor_foreground = #2e3440
 
-# special
-foreground      = #e6e6dc
-foreground_bold = #e6e6dc
-cursor          = #e6e6dc
-background      = #002635
+foreground = #d8dee9
+foreground_bold = #d8dee9
+background = #2e3440
 
-# black
-color0  = #00384d
-color8  = #517f8d
+highlight = #4c566a
 
-# red
-color1  = #c43061
-color9  = #ff5a67
-
-# green
-color2  = #7fc06e
-color10 = #9cf087
-
-# yellow
-color3  = #f08e48
-color11 = #ffcc1b
-
-# blue
-color4  = #1c8db2
-color12 = #7eb2dd
-
-# magenta
-color5  = #c694ff
-color13 = #fb94ff
-
-# cyan
-color6  = #00cccc
-color14 = #00ffff
-
-# white
-color7  = #77929e
-color15 = #b7cff9
+color0  = #3b4252
+color1  = #bf616a
+color2  = #a3be8c
+color3  = #ebcb8b
+color4  = #81a1c1
+color5  = #b48ead
+color6  = #88c0d0
+color7  = #e5e9f0
+color8  = #4c566a
+color9  = #bf616a
+color10 = #a3be8c
+color11 = #ebcb8b
+color12 = #81a1c1
+color13 = #b48ead
+color14 = #8fbcbb
+color15 = #eceff4
