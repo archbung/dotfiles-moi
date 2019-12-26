@@ -1,10 +1,2 @@
 rofi.font: Inconsolata 10
 rofi.theme: Arc-Dark
-
-rofi.separator-style: none
-rofi.location: 1
-rofi.width: 100
-rofi.lines: 2
-rofi.line-margin: 0
-rofi.bw: 0
-rofi.line-padding: 1
