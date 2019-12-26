@@ -16,4 +16,4 @@ dracut -f /boot/initramfs-"${pkgbase[@]}"-fallback.img --kver "${kver[@]}"
 
 # Copy the kernel
 echo 'Copying the new kernel...'
-cp usr/lib/modules/${kver}/vmlinuz /boot/vimlinuz-linux-${pkgbase}
+cp usr/lib/modules/${kver}/vmlinuz /boot/vmlinuz-${pkgbase}
