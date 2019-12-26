@@ -33,4 +33,9 @@ fi
 
 
 /usr/lib/geoclue-2.0/demos/agent &
+{{- if eq .chezmoi.hostname "heisenberg" }}
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto
+xrandr --dpi 96
+{{- end }}
 exec xmonad
