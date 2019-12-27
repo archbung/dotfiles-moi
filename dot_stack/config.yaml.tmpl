@@ -19,3 +19,7 @@ templates:
 # Rendition) control codes (in decimal). Use "stack ls stack-colors --basic"
 # to see the current sequence.
 # stack-colors: STYLES
+
+ghc-options:
+  "$locals": -Wall -Wcompat -Wredundant-constraints -Wincomplete-record-updates -Wincomplete-uni-patterns
+  "$targets": -Wall -Werror -Wcompat -Wredundant-constraints -Wincomplete-record-updates -Wincomplete-uni-patterns
