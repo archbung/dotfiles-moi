@@ -21,6 +21,11 @@ if [ -f ~/.extra ]; then
   source ~/.extra
 fi
 
+# Nix
+if [ -f /etc/profile.d/nix.sh ]; then
+  source /etc/profile.d/nix.sh
+fi
+
 # Python
 if [ -f /usr/bin/virtualenvwrapper_lazy.sh ]; then
   source /usr/bin/virtualenvwrapper_lazy.sh
