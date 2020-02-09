@@ -3,8 +3,8 @@
 args=('-H' '--no-hostonly-cmdline')
 
 while read -r line; do
-  if [[ $line = usr/lib/modules/+([^/])/pkgbase ]]; then
-    mapfile -O ${#pkgbase[@]} -t pkgbase < "/$line"
+  if [[ "$line" = 'usr/lib/modules/'+([^/])'/pkgbase' ]]; then
+    read -r pkgbase < "/${line}"
     kver=${line#"usr/lib/modules/"}
     kver=${kver%"/pkgbase"}
 
