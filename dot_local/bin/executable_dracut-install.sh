@@ -8,7 +8,7 @@ while read -r line; do
     kver=${line#"usr/lib/modules/"}
     kver=${kver%"/pkgbase"}
 
-    install -Dm0644 "/${line%'/pkgbase'}/vmlinuz" "/boot/vmlinuz-linux-${pkgbase}"
+    install -Dm0644 "/${line%'/pkgbase'}/vmlinuz" "/boot/vmlinuz-${pkgbase}"
     dracut "${args[@]}" -f /boot/initramfs-"${pkgbase[@]}".img --kver "${kver[@]}"
     dracut -f /boot/initramfs-"${pkgbase[@]}"-fallback.img --kver "${kver[@]}"
   fi
