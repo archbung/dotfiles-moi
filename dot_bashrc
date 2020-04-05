@@ -1,0 +1,16 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias ll='ls -l'
+alias vi='nvim'
+alias mutt='neomutt'
+
+[[ -f ~/.extra ]] && . ~/.extra
+
+# The prompt, requires https://github.com/starship/starship
+eval "$(starship init bash)"

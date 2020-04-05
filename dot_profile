@@ -1,0 +1,5 @@
+export PATH=/home/archbung/.local/bin:/home/archbung/.cargo/bin:$PATH
+export EDITOR=nvim
+export TERMINAL=alacritty
+
+export HISTCONTROL=ignoredups
