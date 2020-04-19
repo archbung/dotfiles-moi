@@ -38,8 +38,8 @@ xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
 xrandr --dpi 96
 {{- end }}
-{{- if eq .chezmoi.wm "xmonad" }}
+{{- if eq .wm "xmonad" }}
 exec xmonad
-{{- else if eq.chezmoi.wm "dwm" }}
+{{- else if eq .wm "dwm" }}
 exec dwm
 {{- end }}
