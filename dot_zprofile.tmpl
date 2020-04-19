@@ -1,0 +1,13 @@
+#
+# ~/.zprofile
+#
+
+{{- if eq .chezmoi.wm "sway" }}
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+  XKB_DEFAULT_LAYOUT=us exec sway
+fi
+{{- else }}
+if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+  exec startx
+fi
+{{- end}}
