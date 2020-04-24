@@ -1,0 +1,6 @@
+[submodule "dot_config/dwm"]
+	path = dot_config/dwm
+	url = https://github.com/archbung/dwm-config
+[submodule "dot_config/xmonad"]
+	path = dot_config/xmonad
+	url = https://github.com/archbung/xmonad-config
