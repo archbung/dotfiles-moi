@@ -18,9 +18,9 @@
 ;;
 ;; They all accept either a font-spec, font string ("Input Mono-12"), or xlfd
 ;; font string. You generally only need these two:
-(setq doom-font (font-spec :family "Inconsolata" :size 16)
+(setq doom-font (font-spec :family "Inconsolata" :size 14)
       doom-variable-pitch-font (font-spec :family "Inconsolata")
-      doom-big-font (font-spec :family "Inconsolata" :size 20))
+      doom-big-font (font-spec :family "Inconsolata" :size 16))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
@@ -30,6 +30,18 @@
 ;; If you want to change the style of line numbers, change this to `relative' or
 ;; `nil' to disable it:
 (setq display-line-numbers-type t)
+
+;; deft
+(setq deft-directory "~/org")
+
+;; Email
+(set-email-account! "archbung"
+                    '((mu4e-sent-folder . "/archbung/sent")
+                      (mu4e-drafts-folder . "/archbung/drafts")
+                      (mu4e-trash-folder . "/archbung/trash")
+                      (smtpmail-smtp-user . "archbung@gmail.com")
+                      (mu4e-compose-signature . "Cheers,\nHizbullah"))
+                    t)
 
 
 ;; Here are some additional functions/macros that could help you configure Doom:
