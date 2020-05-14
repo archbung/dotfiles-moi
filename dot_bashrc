@@ -10,6 +10,8 @@ alias ll='ls -l'
 alias vi='nvim'
 alias mutt='neomutt'
 
+export GPG_TTY=$(tty)
+
 [[ -f ~/.extra ]] && . ~/.extra
 
 # The prompt, requires https://github.com/starship/starship
